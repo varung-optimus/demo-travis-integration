@@ -24,3 +24,12 @@ before_script:
 script:
   - npm run test-single-run
   - (npm start > /dev/null &) && (npm run protractor)
+
+notifications:
+  email:
+    - varun@varungoel.net
+    - kavita.anand@optimusinfo.com
+    - varun.goel@optimusinfo.com
+  slack: optimusinformation:V6INf0bcAimNBTPIQ3lk5tM0
+    on_success: always
+    on_failure: always
